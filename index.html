@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rafay's Law Room</title>
+    <meta name="description" content="A personalized LLB examination preparation system for Rafay Ali.">
+    <meta name="theme-color" content="#111111">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         APP SHELL
+    ========================== -->
+
+    <div id="app">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-mark">R</div>
+                <div>
+                    <h1>Rafay's Law Room</h1>
+                    <span>LLB Examination Command Centre</span>
+                </div>
+            </div>
+
+            <div class="topbar-right">
+                <div class="next-exam-mini">
+                    <span>NEXT EXAM</span>
+                    <strong id="topNextExam">Equity</strong>
+                    <small id="topCountdown">Loading...</small>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                    ☰
+                </button>
+            </div>
+        </header>
+
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="desktop-nav">
+            <button class="nav-btn active" data-page="dashboard">
+                <span>⌂</span> Dashboard
+            </button>
+
+            <button class="nav-btn" data-page="learn">
+                <span>◈</span> Learn
+            </button>
+
+            <button class="nav-btn" data-page="practice">
+                <span>✓</span> Practice
+            </button>
+
+            <button class="nav-btn" data-page="cases">
+                <span>§</span> Case Law
+            </button>
+
+            <button class="nav-btn" data-page="revision">
+                <span>↻</span> Revision
+            </button>
+
+            <button class="nav-btn" data-page="exam">
+                <span>⏱</span> Exam Mode
+            </button>
+
+            <button class="nav-btn" data-page="progress">
+                <span>◉</span> Progress
+            </button>
+        </nav>
+
+
+        <!-- MOBILE NAVIGATION -->
+        <nav class="mobile-nav">
+            <button class="mobile-nav-btn active" data-page="dashboard">
+                <span>⌂</span>
+                <small>Home</small>
+            </button>
+
+            <button class="mobile-nav-btn" data-page="learn">
+                <span>◈</span>
+                <small>Learn</small>
+            </button>
+
+            <button class="mobile-nav-btn" data-page="practice">
+                <span>✓</span>
+                <small>Practice</small>
+            </button>
+
+            <button class="mobile-nav-btn" data-page="revision">
+                <span>↻</span>
+                <small>Revision</small>
+            </button>
+
+            <button class="mobile-nav-btn" data-page="progress">
+                <span>◉</span>
+                <small>Progress</small>
+            </button>
+        </nav>
+
+
+        <!-- MAIN CONTENT -->
+        <main id="mainContent"></main>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div>
+                <strong>Rafay's Law Room</strong>
+                <span>Built for the exams. Built to remember.</span>
+            </div>
+
+            <span>LLB Exam Session 2026</span>
+        </footer>
+
+    </div>
+
+
+    <!-- =========================
+         MODALS
+    ========================== -->
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modalContent"></div>
+    </div>
+
+
+    <!-- CONFETTI -->
+    <div id="confettiContainer"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
